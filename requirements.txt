@@ -1,0 +1,19 @@
+# NOVA Gesture OS - Python dependencies
+# Install with:  python -m pip install -r requirements.txt
+# Works on Python 3.10 - 3.14 (Windows 10/11).
+
+# Core
+opencv-python>=4.8
+numpy>=1.24
+mediapipe>=0.10.21        # old (mp.solutions) and new (Tasks API) versions both work
+
+# Windows volume control
+pycaw; sys_platform == "win32"
+comtypes; sys_platform == "win32"
+
+# Screenshots (either one works; mss is faster)
+mss
+pillow
+
+# System tray icon (optional; hotkeys still work without it)
+pystray
